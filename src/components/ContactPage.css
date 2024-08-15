@@ -1,63 +1,13 @@
-/* src/pages/ContactPage.css */
-header{
-  background-image: url(https://images.app.goo.gl/TFdwRTtha5kXq6Gz8);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-
 .contact-page {
-  /* display: flex; */
-  justify-content: space-between;
-  padding: 20px;
-  font-family: Arial, sans-serif;
-  height: 80%;
-  width: 80%;
-  margin-left: 10%;
-  margin-top: 10%;
-  background-color: rgb(235, 215, 218);
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .contact-info {
-  display: flex;
-  width: 100%;
-}
-
-.contact-left,
-.contact-right {
-  width: 45%;
-}
-
-h2 {
-  font-weight: bold;
-  text-decoration: underline;
-  margin-bottom: 20px;
-}
-
-.contact-details,
-.store-details {
-  display: flex;
-  flex-direction: column;
-}
-
-.contact-item,
-.store-item {
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
-}
-
-.icon {
-  width: 24px;
-  height: 24px;
-  margin-right: 10px;
-}
-
-.store-image {
-  width: 50%;
-  height: 30%;
-  margin-top: 20px;
-  border: 1px solid #ccc;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 2rem;
   border-radius: 8px;
 }

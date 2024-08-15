@@ -1,0 +1,16 @@
+.products-page {
+    padding: 2rem;
+    display: flex;
+    gap: 2rem;
+    background-color: #f0f4f3;
+  }
+  
+  .products-page img {
+    max-width: 200px;
+    border-radius: 8px;
+  }
+  
+  .product-info {
+    max-width: 600px;
+  }
+  
