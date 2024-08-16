@@ -1,8 +1,22 @@
+/* AboutUsPage.css */
+
 .about-us {
-    padding: 2rem;
-    background-color: #f0f4f3;
-    margin: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
+  padding: 2rem;
+  background-color: #f0f4f3;
+  margin: 2rem;
+  border-radius: 8px;
+  box-shadow: 8px 8px 12px rgba(0, 128, 0, 0.6); /* Shadow on the right and bottom */
+  width: 50%;
+  margin-left: 320px;
+  height: 400px;
+}
+
+.about-us h2 {
+  font-size: 2rem; /* Sets the font size for the heading */
+  margin-bottom: 10px; /* Adds space below the heading */
+}
+
+.about-us p {
+  font-size: 1.3rem; /* Sets the font size for the paragraph */
+  line-height: 1.5; /* Improves readability by adding space between lines */
+}
