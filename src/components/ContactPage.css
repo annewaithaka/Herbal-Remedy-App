@@ -1,13 +1,70 @@
 .contact-page {
-  height: 100vh;
-  background-size: cover;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  padding: 20px;
+  width: 70%; /* Adjust width as needed */
+  max-width: 900px; /* Adjust maximum width as needed */
+  height: 60vh; /* Adjust height as needed */
+  max-height: 600px; /* Adjust maximum height as needed */
+  margin: auto; /* Center the container horizontally */
+  /* background-image: url('../assets/contact-background.jpg'); Adjust the path as necessary */
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px; /* Optional: Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Shadow effect */
+  margin-top: 30px;
 }
 
-.contact-info {
-  background: rgba(255, 255, 255, 0.8);
-  padding: 2rem;
-  border-radius: 8px;
+.contact-left, .contact-right {
+  width: 45%;
+}
+
+.contact-left {
+  padding-right: 20px; /* Space between left and right side */
+}
+
+.social-icons {
+  display: flex;
+  flex-direction: column; /* Stack icons vertically */
+  gap: 20px; /* Space between icons */
+  font-size: 24px; /* Adjust icon size */
+}
+
+.social-icons a {
+  text-decoration: none;
+  color: inherit; /* Inherit text color */
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  margin-right: 8px; /* Space between icon and text */
+}
+
+.divider {
+  border-left: 2px dotted green;
+  height: 100%;
+  margin: 0 20px; /* Space around the divider */
+}
+
+.contact-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 24px; /* Adjust font size for location */
+}
+
+.location .icon {
+  margin-right: 8px; /* Space between icon and location text */
+}
+
+.store-image {
+  width: 100%;
+  max-width: 300px; /* Adjust max-width as needed */
+  height: auto;
 }

@@ -1,0 +1,44 @@
+/* src/components/HerbCard.css */
+
+.herb-card {
+    border: 1px solid #ddd; /* Light gray border for the card */
+    border-radius: 8px; /* Rounded corners */
+    padding: 16px; /* Padding inside the card */
+    margin: 16px; /* Margin around the card */
+    text-align: center; /* Center text and content */
+    background-color: #fff; /* White background color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for 3D effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+  }
+  
+  .herb-card:hover {
+    transform: scale(1.05); /* Slightly enlarge the card on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Darker shadow on hover */
+  }
+  
+  .herb-card img {
+    max-width: 100px; /* Limit image width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners for the image */
+    margin-bottom: 12px; /* Space below the image */
+  }
+  
+  .herb-card h3 {
+    margin: 12px 0; /* Space above and below the heading */
+    font-size: 1.2rem; /* Slightly larger font size for the heading */
+    color: #333; /* Dark gray color for the heading text */
+  }
+  
+  .herb-card ul {
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+  }
+  
+  .herb-card li {
+    margin-bottom: 8px; /* Space between list items */
+    font-size: 0.9rem; /* Slightly smaller font size for the list items */
+    color: #666; /* Medium gray color for the list item text */
+  }
+  
+

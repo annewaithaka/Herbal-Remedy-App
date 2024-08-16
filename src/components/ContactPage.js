@@ -1,17 +1,32 @@
+import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
 import './ContactPage.css';
-import contactImage from '../assets/contact.jpg';
+// import storeImage from '../assets/store.jpg'; // Import your store image
 
 function ContactPage() {
   return (
-    <div className="contact-page" style={{ backgroundImage: `url(${contactImage})` }}>
-      <div className="contact-info">
-        <h2>Contact Us</h2>
-        <p>We are here to assist you. Reach out to us through any of the following means:</p>
-        <ul>
-          <li>Phone: 123-456-7890</li>
-          <li>Email: contact@company.com</li>
-          <li>Visit our store</li>
-        </ul>
+    <div className="contact-page">
+      <div className="contact-left">
+        <h2>You can contact us here:</h2>
+        <div className="social-icons">
+          <a href="https://www.facebook.com/Herbstore" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faFacebook} className="icon facebook-icon" />Herbstore
+          </a>
+          <a href="https://www.instagram.com/Herbstore" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faInstagram} className="icon instagram-icon" /> Herbstore
+          </a>
+        </div>
+      </div>
+      <div className="divider"></div>
+      <div className="contact-right">
+        <h2>Or visit us in our store:</h2>
+        <div className="location">
+          <FontAwesomeIcon icon={faMapMarkerAlt} className="icon location-icon" />
+          <span>Nairobi, Kenya</span>
+        </div>
+        {/* <img src={storeImage} alt="Our Store" className="store-image" /> */}
       </div>
     </div>
   );

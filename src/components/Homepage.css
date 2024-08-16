@@ -1,19 +1,49 @@
 .homepage {
-    height: 100vh;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .content {
-    display: flex;
-    gap: 2rem;
-  }
-  
-  .card {
-    background: rgba(255, 255, 255, 0.8);
-    padding: 2rem;
-    border-radius: 8px;
-  }
-  
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  color: #fff;
+}
+
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.card {
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 1rem;
+}
+
+.card ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  font-size: 1rem;
+}
+
+.card ul li {
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 1.5rem; /* Adjust the font size if needed */
+  color: black; /* Font color */
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+  width: 200px;
+  margin-left: 40%;
+}
+
