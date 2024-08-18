@@ -29,4 +29,46 @@ function HerbCard({ herb }) {
   );
 }
 
+function HerbCard({ herb, onAddComment }) {
+  const [comment, setComment] = useState('');
+  const [showComments, setShowComments] = useState(false);
+
+  const handleAddComment = () => {
+    if (comment.trim()) {
+      onAddComment(herb.id, comment);
+      setComment('');
+    }
+  };
+
+  return (
+    <div className="herb-card">
+      <img src={herb.image} alt={herb.name} className="herb-image" />
+      <h3>{herb.name}</h3>
+      <ul>
+        {herb.advantages.map((advantage, index) => (
+          <li key={index}>{advantage}</li>
+        ))}
+      </ul>
+      <button onClick={() => setShowComments(!showComments)}>
+        {showComments ? 'Hide Comments' : 'Show Comments'}
+      </button>
+      {showComments && (
+        <div className="comments-section">
+          <ul>
+            {herb.comments.map((comment, index) => (
+              <li key={index}>{comment}</li>
+            ))}
+          </ul>
+          <input
+            type="text"
+            value={comment}
+            onChange={(e) => setComment(e.target.value)}
+            placeholder="Add a comment"
+          />
+          <button onClick={handleAddComment}>Add Comment</button>
+        </div>
+      )}
+    </div>
+  );
+}
 export default HerbCard;

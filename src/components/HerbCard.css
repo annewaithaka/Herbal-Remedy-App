@@ -41,4 +41,41 @@
     color: #666; /* Medium gray color for the list item text */
   }
   
-
+  .herb-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+  }
+  
+  .herb-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .herb-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .herb-card h3 {
+    margin-top: 0;
+  }
+  
+  .herb-card ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .herb-card button {
+    padding: 10px;
+    margin-right: 10px;
+    font-size: 14px;
+    background-color: #f44336;
+    color: white;
+    border: none
+  

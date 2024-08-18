@@ -1,0 +1,23 @@
+.new-herb-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .new-herb-form input, .new-herb-form textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    width: 100%;
+  }
+  
+  .new-herb-form button {
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
