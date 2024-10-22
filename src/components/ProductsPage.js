@@ -161,7 +161,7 @@ function ProductsPage() {
           <div className="herb-card" key={herb.id}>
             <img src={getImagePath(herb.image)} alt={herb.name} className="herb-image" />
             <h3>{herb.name}</h3>
-            <p>{herb.description}</p>
+            <p>{herb.advantages}</p>
             <button className="edit-button" onClick={() => handleEdit(herb)}>
               <FontAwesomeIcon icon={faEdit} /> Edit
             </button>

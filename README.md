@@ -68,3 +68,119 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+Herbal Remedy Web App
+Overview
+The Herbal Remedy Web App is a full-stack application designed to provide users with information about various herbal remedies. Users can browse available remedies, save their favorites, and leave reviews. The application is built using React for the front end and Flask for the backend, with PostgreSQL as the database.
+
+Features
+User authentication (sign-up, login, logout).
+Browse and search for herbal remedies.
+Save favorite remedies.
+Leave reviews and ratings for remedies.
+Responsive design using Bootstrap.
+Tech Stack
+Frontend: React, Bootstrap
+Backend: Flask
+Database: PostgreSQL
+Authentication: JWT (JSON Web Tokens) for secure access.
+Development Tools: Postman for API testing.
+Project Structure
+plaintext
+Copy code
+Herbal-Remedy-App/
+│
+├── herbal-remedy-backend/
+│   ├── app.py                 # Main application file
+│   ├── config.py              # Configuration settings
+│   ├── models.py              # Database models
+│   ├── seed.py                # Script to seed the database
+│   ├── routes/
+│   │   ├── user.py            # User authentication routes
+│   │   └── remedy.py          # Remedy-related routes
+│   ├── venv/                  # Virtual environment
+│   └── requirements.txt       # Required Python packages
+│
+├── herbal-remedy-frontend/
+│   ├── src/
+│   │   ├── components/        # React components
+│   │   ├── context/           # Auth context for user state management
+│   │   ├── services/          # API services for authentication and data fetching
+│   │   └── App.js             # Main React application file
+│   ├── public/
+│   ├── package.json           # Frontend dependencies
+│   └── package-lock.json      # Lockfile for dependencies
+│
+└── README.md                  # This README file
+Installation
+Backend Setup
+Clone the repository:
+
+bash
+Copy code
+git clone <repository-url>
+cd herbal-remedy-backend
+Create a virtual environment:
+
+bash
+Copy code
+python3 -m venv venv
+source venv/bin/activate  # For Linux or macOS
+# or
+venv\Scripts\activate     # For Windows
+Install dependencies:
+
+bash
+Copy code
+pip install -r requirements.txt
+Configure the database:
+
+Update the SQLALCHEMY_DATABASE_URI in config.py with your PostgreSQL connection string.
+Create the database:
+
+Run the following command in the PostgreSQL shell:
+sql
+Copy code
+CREATE DATABASE dbname;
+Run the application:
+
+bash
+Copy code
+flask run
+Frontend Setup
+Navigate to the frontend directory:
+
+bash
+Copy code
+cd herbal-remedy-frontend
+Install frontend dependencies:
+
+bash
+Copy code
+npm install
+Start the frontend application:
+
+bash
+Copy code
+npm start
+Usage
+Navigate to http://localhost:3000 to access the Herbal Remedy Web App.
+Users can sign up, log in, browse remedies, save favorites, and leave reviews.
+Testing
+Use Postman to test API endpoints:
+POST /api/signup - Create a new user.
+POST /api/login - Authenticate user and receive a token.
+GET /api/remedies - Fetch all available remedies.
+POST /api/reviews - Submit a review for a remedy.
+Contributing
+Contributions are welcome! Please submit a pull request for any improvements or bug fixes.
+
+License
+This project is licensed under the MIT License. See the LICENSE file for more details.
+
+Acknowledgments
+Flask for the backend framework.
+React for the frontend framework.
+PostgreSQL for database management.
+Bootstrap for responsive design.
