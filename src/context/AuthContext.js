@@ -81,9 +81,9 @@ const AuthProvider = ({ children }) => {
     };
 
      // Add getToken function
-     const getToken = () => {
-        return token; // Return the current token
-    };
+    //  const getToken = () => {
+    //     return token; // Return the current token
+    // };
 
     return (
         <AuthContext.Provider value={{ user, token, handleSignup, handleLogin, logout }}>
