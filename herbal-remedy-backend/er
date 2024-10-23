@@ -1,0 +1,9 @@
+          List of relations
+ Schema |  Name   | Type  |  Owner   
+--------+---------+-------+----------
+ public | comment | table | postgres
+ public | remedy  | table | postgres
+ public | review  | table | postgres
+ public | user    | table | postgres
+(4 rows)
+

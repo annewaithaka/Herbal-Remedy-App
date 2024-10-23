@@ -8,6 +8,9 @@ function Navbar() {
         <li><Link to="/">Home</Link></li>
         <li><Link to="/about">About Us</Link></li>
         <li><Link to="/products">Products</Link></li>
+        <li><Link to="/remedies">Remedies</Link></li> {/* New link */}
+        <li><Link to="/signup">Sign Up</Link></li> {/* New link */}
+        <li><Link to="/login">Login</Link></li> {/* New link */}
         <li><Link to="/contact">Contact</Link></li>
       </ul>
     </nav>
@@ -15,5 +18,3 @@ function Navbar() {
 }
 
 export default Navbar;
-
-

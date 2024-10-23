@@ -25,25 +25,26 @@ To get a local copy up and running, follow these steps:
 
 - Node.js and npm (Node Package Manager) installed. You can download them from [nodejs.org](https://nodejs.org/).
 
-### Installation
+### Code Splitting
 
-**Clone the repository**
-**Navigate into the project directory**
-**Install the dependencies**
-**Start the development server**
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### API
-**Make sure you have the API running on http://localhost:3001.**
-Install json-server globally
-Create a db.json file in the root directory with sample data
-Start the mock server
+### Analyzing the Bundle Size
 
-### Usage
-Homepage: Visit the homepage to see featured and recommended herbs.
-Products Page: Manage herbs (add, edit, delete) and view comments.
-Navigation: Use the navigation bar to switch between different pages (Home, About Us, Products, Contact).
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Acknowledgements
-React and React Router for building the user interface.
-json-server for creating a mock API.
-Font Awesome for providing icons.
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
